@@ -1,0 +1,105 @@
+.container {
+  min-height: 75vh;
+  background-color: black;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 30px;
+  border: 3px solid red;
+  display: flex;
+  width: 80%;
+  margin: 23px auto;
+  border-radius: 12px;
+  padding: 34px;
+  background-image: url("images/bgSongs.jpg");
+  background-size: cover;
+}
+
+.bottom {
+  opacity: 1;
+  position: relative;
+  height: 120px;
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: 0.8;
+  bottom: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+
+#myProgressBar {
+  width: 80vw;
+}
+
+.icons {
+  margin: 8px;
+  padding: 5px;
+}
+
+.icons button i {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.songitem {
+  height: 35px;
+  display: flex;
+  background-color: white;
+  width: 110%;
+  color: black;
+  margin: 12px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.songitem img {
+  width: 55px;
+  margin: 0 17px;
+  border-radius: 25px;
+  height: 30px;
+}
+
+.timestamp {
+  margin: 0 20px;
+}
+
+.songlistplay i {
+  padding-right: 8px;
+  cursor: pointer;
+}
+
+.icons:hover {
+  cursor: pointer;
+}
+.songinfo {
+  position: absolute;
+  left: 0;
+  margin-left: 9vw;
+  margin-bottom: 22px;
+  opacity: 1;
+}
+
+#gif {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+
+.color {
+  color: blue;
+}
+
+#masterPlay:hover {
+  transform: scale(1.1);
+}
+
+#previous:hover {
+  transform: scale(1.1);
+}
+
+#next:hover {
+  transform: scale(1.1);
+}

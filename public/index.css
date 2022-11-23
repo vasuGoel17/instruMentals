@@ -1,0 +1,169 @@
+body {
+  background-image: url("images/indexBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #dbedf3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #da0463;
+}
+
+.logo {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 60px;
+  color: yellow;
+  font-style: forte;
+  margin: 0px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.specialLogo {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 120px;
+  color: yellow;
+  font-style: forte;
+  margin: 0px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button {
+  font-size: 20px;
+  color: azure;
+  height: 140px;
+  width: 250px;
+  margin-left: 45px;
+  margin-bottom: 50px;
+  margin-top: 0px;
+  margin-right: 0px;
+  border: 4px solid grey;
+  border-radius: 15px;
+  display: inline;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: scale(1.25);
+}
+
+.yourBand {
+  display: inline;
+}
+
+#bestPick {
+  background-image: url("images/bpfy.png");
+  background-size: 250px 140px;
+}
+
+#Bollywood {
+  background-image: url("images/bm.png");
+  /* background-repeat: no-repeat; */
+  background-size: 250px 140px;
+}
+
+#nineties {
+  background-image: url("images/oig.png");
+  /* background-repeat: no-repeat; */
+  background-size: 250px 140px;
+}
+
+#englishSongs {
+  background-image: url("images/es.png");
+  /* background-repeat: no-repeat; */
+  background-size: 250px 140px;
+}
+
+.category1 {
+  text-align: left;
+  color: aqua;
+  padding-left: 20px;
+  margin-top: 30px;
+}
+
+#atif {
+  background-image: url("images/atif.jpg");
+  background-size: 250px 140px;
+}
+
+#arijit {
+  background-image: url("images/arijit.jpg");
+  background-size: 250px 140px;
+}
+
+#ap {
+  background-image: url("images/ap.png");
+  background-size: 250px 140px;
+}
+
+#honey {
+  background-image: url("images/honey.jpg");
+  background-size: 250px 140px;
+}
+
+#aashiqui {
+  background-image: url("images/Aashiqui.jpg");
+  background-size: 250px 140px;
+}
+
+#brahmastra {
+  background-image: url("images/bram.webp");
+  background-size: 250px 140px;
+}
+
+#shershah {
+  background-image: url("images/sher.jpg");
+  background-size: 250px 140px;
+}
+
+#adhm {
+  background-image: url("images/adhm.jpg");
+  background-size: 250px 140px;
+}
+
+#workout {
+  background-image: url("images/workout.jpg");
+  background-size: 250px 140px;
+}
+
+#travel {
+  background-image: url("images/travel.jpg");
+  background-size: 250px 140px;
+}
+
+#sleep {
+  background-image: url("images/sleep.jpg");
+  background-size: 250px 140px;
+}
+
+#party {
+  background-image: url("images/party.jpg");
+  background-size: 250px 140px;
+}
+
+#feedback {
+  background: transparent;
+  border: 3px solid transparent;
+  font-size: 26px;
+}
+
+#session {
+  color: orange;
+  font-weight: bolder;
+  font-size: 20px;
+  cursor: context-menu;
+}
+
+#clock {
+  color: #da0463;
+  font-size: 15px;
+  cursor: context-menu;
+}

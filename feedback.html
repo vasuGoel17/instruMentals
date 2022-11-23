@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="feedback.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="images/icon.webp" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <title>instruMentals-feedback</title>
+  </head>
+  <body>
+    <div>
+      <h1 class="logo">instru<b style="font-size: 69px">M</b>entals</h1>
+    </div>
+    <nav class="navbar navbar-inverse" style="margin-bottom: 30px">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <div id="session" onload="currentTime()"></div>
+          <div id="clock" onload="currentTime()"></div>
+        </div>
+
+        <div class="navbar-header">
+          <form action="/home" method="get">
+            <a class="navbar-brand"
+              ><button
+                style="
+                  background: transparent;
+                  margin-left: 30px;
+                  border: transparent;
+                "
+              >
+                Home
+              </button>
+            </a>
+          </form>
+        </div>
+
+        <div class="navbar-header">
+          <form action="/yourBand" method="get">
+            <a class="navbar-brand"
+              ><button style="background: transparent; border: transparent">
+                Your Band
+              </button>
+            </a>
+          </form>
+        </div>
+
+        <div class="navbar-header">
+          <form action="/aboutUs" method="get">
+            <a class="navbar-brand"
+              ><button style="background: transparent; border: transparent">
+                About Us
+              </button>
+            </a>
+          </form>
+        </div>
+
+        <form class="navbar-header navbar-left" action="/feedback" method="get">
+          <a class="navbar-brand"><button id="feedback">Feedback</button> </a>
+        </form>
+      </div>
+    </nav>
+
+    <h1 style="color: orange; font-size: 30px">FEEDBACK FORM</h1>
+
+    <form action="post" id="form">
+      <div class="formInside">
+        <label class="label" for="firstName">First Name: </label>
+        <input type="text" name="firstName" id="firstName" />
+      </div>
+      <div class="formInside">
+        <label class="label" for="lastName">Last Name: </label>
+        <input type="text" name="lastName" id="lastName" />
+      </div>
+      <div class="formInside">
+        <label class="label" for="email">Email id: </label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div class="formInside">
+        <label class="label" for="number">Phone No.: </label>
+        <input type="tel" name="number" id="number" />
+      </div>
+      <div class="formInside">
+        <label class="label" for="like">How Much you like our site: </label>
+        <input type="range" name="like" id="like" />
+      </div>
+      <div class="formInside">
+        <label class="label" for="feedbacks">Your Feedback: </label>
+        <textarea
+          name="feedbacks"
+          id="feedbacks"
+          cols="30"
+          rows="4"
+          placeholder="Write anything like how you like our site, how we can improve it, any complaints or any feedback"
+        ></textarea>
+      </div>
+      <div class="formInside">
+        <button type="submit" class="submit">Submit</button>
+      </div>
+    </form>
+
+    <script src="feedback.js"></script>
+  </body>
+</html>

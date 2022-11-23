@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="icon" href="images/icon.webp" />
+    <title>instruMentals-aboutUs</title>
+  </head>
+  <body>
+    <div>
+      <h1 class="logo">instru<b style="font-size: 69px">M</b>entals</h1>
+    </div>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <div id="session" onload="currentTime()"></div>
+          <div id="clock" onload="currentTime()"></div>
+        </div>
+
+        <div class="navbar-header">
+          <form action="home" method="get">
+            <a class="navbar-brand"
+              ><button
+                style="
+                  background: transparent;
+                  margin-left: 30px;
+                  border: transparent;
+                "
+              >
+                Home
+              </button>
+            </a>
+          </form>
+        </div>
+
+        <div class="navbar-header">
+          <form action="/yourBand" method="get">
+            <a class="navbar-brand"
+              ><button style="background: transparent; border: transparent">
+                Your Band
+              </button>
+            </a>
+          </form>
+        </div>
+
+        <div class="navbar-header">
+          <form action="/aboutUs" method="get">
+            <a class="navbar-brand"
+              ><button style="background: transparent; border: transparent">
+                About Us
+              </button>
+            </a>
+          </form>
+        </div>
+
+        <form class="navbar-header navbar-left" action="/feedback" method="get">
+          <a class="navbar-brand"><button id="feedback">Feedback</button> </a>
+        </form>
+      </div>
+    </nav>
+
+    <!-- cssvndddddddddddddddddddddddddddddddddddddddddddddddddddddd
+ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd -->
+    <div>
+      <h2 class="category1" style="text-align: center">ABOUT US</h2>
+      <p class="aboutUs">
+        InstruMentals is a multidisciplinary creative studio where you can
+        listen to trendy songs and even try beating some drums(virtually).Being
+        programmer ourselves we know that our community loves dark themes more
+        than everything so we made this site such that it would be a programmer
+        friendly site.
+      </p>
+    </div>
+
+    <h2 class="category1" style="text-align: center; margin-top: 180px">
+      CREATORS
+    </h2>
+    <div class="aboutCreators">
+      <div class="aboutCreators1">
+        <p>creator 1</p>
+        <h3>VASU GOEL</h3>
+      </div>
+      <div class="aboutCreators1">
+        <p>creator 2</p>
+        <h3>BHANU AGGARWAL</h3>
+      </div>
+    </div>
+
+    <h1 style="color: white; text-shadow: 3px 0 #3fa9d0; margin-top: 50px">
+      A coders feel good music web
+    </h1>
+    <!-- cssvndddddddddddddddddddddddddddddddddddddddddddddddddddddd
+ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd -->
+    <script src="about.js"></script>
+  </body>
+</html>

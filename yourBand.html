@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>instruMentals-yourBand</title>
+    <link rel="stylesheet" href="yourBand.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="images/icon.webp" />
+    <link rel="stylesheet" href="bootstrap.css" />
+  </head>
+
+  <body>
+    <!-- <h1 id="title">Drum 🥁 Kit</h1> -->
+    <div>
+      <h1 class="logo">instru<b style="font-size: 69px">M</b>entals</h1>
+    </div>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <div id="session" onload="currentTime()"></div>
+          <div id="clock" onload="currentTime()"></div>
+        </div>
+
+        <div class="navbar-header">
+          <form action="/home" method="get">
+            <a class="navbar-brand"
+              ><button
+                style="
+                  background: transparent;
+                  margin-left: 30px;
+                  border: transparent;
+                "
+              >
+                Home
+              </button>
+            </a>
+          </form>
+        </div>
+
+        <div class="navbar-header">
+          <form action="/yourBand" method="get">
+            <a class="navbar-brand"
+              ><button style="background: transparent; border: transparent">
+                Your Band
+              </button>
+            </a>
+          </form>
+        </div>
+
+        <div class="navbar-header">
+          <form action="/aboutUs" method="get">
+            <a class="navbar-brand"
+              ><button style="background: transparent; border: transparent">
+                About Us
+              </button>
+            </a>
+          </form>
+        </div>
+
+        <form class="navbar-header navbar-left" action="/feedback" method="get">
+          <a class="navbar-brand"><button id="feedback">Feedback</button> </a>
+        </form>
+      </div>
+    </nav>
+    <div class="set">
+      <button class="drum" id="w_drum">w</button>
+      <button class="drum" id="a_drum">a</button>
+      <button class="drum" id="s_drum">s</button>
+      <button class="drum" id="d_drum">d</button>
+      <button class="drum" id="j_drum">j</button>
+      <button class="drum" id="k_drum">k</button>
+      <button class="drum" id="l_drum">l</button>
+    </div>
+
+    <h1 style="color: white; text-shadow: 3px 0 #3fa9d0">
+      A coders feel good music web
+    </h1>
+
+    <script src="yourBand.js"></script>
+  </body>
+</html>

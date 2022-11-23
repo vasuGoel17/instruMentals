@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sleep.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="icon" href="images/icon.webp" />
+    <title>instruMentals-sleep</title>
+  </head>
+  <body>
+    <div>
+      <h1 class="logo">instru<b style="font-size: 69px">M</b>entals</h1>
+    </div>
+    <nav class="navbar navbar-inverse" style="margin-bottom: 30px">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <div id="session" onload="currentTime()"></div>
+          <div id="clock" onload="currentTime()"></div>
+        </div>
+
+        <div class="navbar-header">
+          <form action="/home" method="get">
+            <a class="navbar-brand"
+              ><button
+                style="
+                  background: transparent;
+                  margin-left: 30px;
+                  border: transparent;
+                "
+              >
+                Home
+              </button>
+            </a>
+          </form>
+        </div>
+
+        <div class="navbar-header">
+          <form action="/yourBand" method="get">
+            <a class="navbar-brand"
+              ><button style="background: transparent; border: transparent">
+                Your Band
+              </button>
+            </a>
+          </form>
+        </div>
+
+        <div class="navbar-header">
+          <form action="/aboutUs" method="get">
+            <a class="navbar-brand"
+              ><button style="background: transparent; border: transparent">
+                About Us
+              </button>
+            </a>
+          </form>
+        </div>
+
+        <form class="navbar-header navbar-left" action="/feedback" method="get">
+          <a class="navbar-brand"><button id="feedback">Feedback</button> </a>
+        </form>
+      </div>
+    </nav>
+
+    <!-- vsdndvnsvnsdkvvndkdssssssssssssssssssssssssssssssssssssssdsddddddddddddddd
+dsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss -->
+
+    <h1>Sleeping Pill</h1>
+    <div class="container">
+      <div class="songList">
+        <div class="songitem">
+          <img alt="1" />
+          <span class="songName"></span>
+          <span class="songlistplay"
+            ><span class="timestamp"></span>
+            <i id="1" class="far songitemplay fa fa-play-circle"></i>
+          </span>
+        </div>
+
+        <div class="songitem">
+          <img alt="1" />
+          <span class="songName"></span>
+          <span class="songlistplay"
+            ><span class="timestamp"></span>
+            <i id="2" class="far songitemplay fa fa-play-circle"></i>
+          </span>
+        </div>
+
+        <div class="songitem">
+          <img alt="1" />
+          <span class="songName"></span>
+          <span class="songlistplay"
+            ><span class="timestamp"></span>
+            <i id="3" class="far songitemplay fa fa-play-circle"></i>
+          </span>
+        </div>
+
+        <div class="songitem">
+          <img alt="1" />
+          <span class="songName"></span>
+          <span class="songlistplay"
+            ><span class="timestamp"></span>
+            <i id="4" class="far songitemplay fa fa-play-circle"></i>
+          </span>
+        </div>
+
+        <div class="songitem">
+          <img alt="1" />
+          <span class="songName"></span>
+          <span class="songlistplay"
+            ><span class="timestamp"></span>
+            <i id="5" class="far songitemplay fa fa-play-circle"></i>
+          </span>
+        </div>
+
+        <div class="songitem">
+          <img alt="1" />
+          <span class="songName"></span>
+          <span class="songlistplay"
+            ><span class="timestamp"></span>
+            <i id="6" class="far songitemplay fa fa-play-circle"></i>
+          </span>
+        </div>
+
+        <div class="songitem">
+          <img alt="1" />
+          <span class="songName"></span>
+          <span class="songlistplay"
+            ><span class="timestamp"></span>
+            <i id="7" class="far songitemplay fa fa-play-circle"></i>
+          </span>
+        </div>
+
+        <div class="songitem">
+          <img alt="1" />
+          <span class="songName"></span>
+          <span class="songlistplay"
+            ><span class="timestamp"></span>
+            <i id="8" class="far songitemplay fa fa-play-circle"></i>
+          </span>
+        </div>
+
+        <div class="songitem">
+          <img alt="1" />
+          <span class="songName"></span>
+          <span class="songlistplay"
+            ><span class="timestamp"></span>
+            <i id="9" class="far songitemplay fa fa-play-circle"></i>
+          </span>
+        </div>
+
+        <div class="songitem">
+          <img alt="1" />
+          <span class="songName"></span>
+          <span class="songlistplay"
+            ><span class="timestamp"></span>
+            <i id="10" class="far songitemplay fa fa-play-circle"></i>
+          </span>
+        </div>
+      </div>
+      <div class="songBottom"></div>
+    </div>
+
+    <div class="bottom">
+      <input
+        type="range"
+        name="range"
+        id="myProgressBar"
+        min="0"
+        max="100"
+        value="0"
+      />
+      <div class="icons">
+        <i class="fas fa-2x fa-step-backward" id="previous"></i>
+        <i class="far fa-2x fa-play-circle" id="masterPlay"></i>
+        <i class="fas fa-2x fa-step-forward" id="next"></i>
+      </div>
+      <div class="songinfo">
+        <img src="gifs/wave.webp" width="55px" alt="1" id="gif" /><span
+          id="masterSongName"
+          >Khamoshiyaan</span
+        >
+      </div>
+    </div>
+
+    <!-- vsdndvnsvnsdkvvndkdssssssssssssssssssssssssssssssssssssssdsddddddddddddddd
+      dsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss -->
+    <script
+      src="https://kit.fontawesome.com/afd7ab0413.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="sleep.js"></script>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="icon" href="images/icon.webp" />
+    <title>instruMentals</title>
+  </head>
+  <body>
+    <div>
+      <h1 class="logo">instru<b style="font-size: 69px">M</b>entals</h1>
+    </div>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <div id="session" onload="currentTime()"></div>
+          <div id="clock" onload="currentTime()"></div>
+        </div>
+
+        <div class="navbar-header">
+          <form action="/home" method="get">
+            <a class="navbar-brand"
+              ><button
+                style="
+                  background: transparent;
+                  margin-left: 30px;
+                  border: transparent;
+                "
+              >
+                Home
+              </button>
+            </a>
+          </form>
+        </div>
+
+        <div class="navbar-header">
+          <form action="/yourBand" method="get">
+            <a class="navbar-brand"
+              ><button style="background: transparent; border: transparent">
+                Your Band
+              </button>
+            </a>
+          </form>
+        </div>
+
+        <div class="navbar-header">
+          <form action="/aboutUs" method="get">
+            <a class="navbar-brand"
+              ><button style="background: transparent; border: transparent">
+                About Us
+              </button>
+            </a>
+          </form>
+        </div>
+
+        <form class="navbar-header navbar-left" action="/feedback" method="get">
+          <a class="navbar-brand"><button id="feedback">Feedback</button> </a>
+        </form>
+      </div>
+    </nav>
+
+    <div>
+      <h2 class="category1">GENRE</h2>
+      <div class="btn">
+        <form action="/bestPick" method="get">
+          <button class="button" id="bestPick">BEST PICKS FOR YOU</button>
+        </form>
+        <form action="/bollywood" method="get">
+          <button class="button" id="Bollywood">BOLLYWOOD MIXTURES</button>
+        </form>
+        <form action="/nineties" method="get">
+          <button class="button" id="nineties">OLD IS GOLD</button>
+        </form>
+        <form action="/englishSongs" method="get">
+          <button class="button" id="englishSongs">ENGLISH Songs</button>
+        </form>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="category1">ARTISTS</h2>
+      <div class="btn">
+        <form action="/arijit" method="get">
+          <button class="button" id="arijit">ARIJIT SINGH</button>
+        </form>
+        <form action="/atif" method="get">
+          <button class="button" id="atif">ATIF ASLAM</button>
+        </form>
+        <form action="/ap" method="get">
+          <button class="button" id="ap">AP DHILLON</button>
+        </form>
+        <form action="/honey" method="get">
+          <button class="button" id="honey">HONEY SINGH</button>
+        </form>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="category1">MOVIES</h2>
+      <div class="btn">
+        <form action="/aashiqui" method="get">
+          <button class="button" id="aashiqui">AASHIQUI 2</button>
+        </form>
+        <form action="/brahmastra" method="get">
+          <button class="button" id="brahmastra">BRAHMASTRA</button>
+        </form>
+        <form action="/shershah" method="get">
+          <button class="button" id="shershah">SHERSHAAH</button>
+        </form>
+        <form action="/adhm" method="get">
+          <button class="button" id="adhm">AE DIL HAI MUSHKIL</button>
+        </form>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="category1">BROWSE IT</h2>
+      <div class="btn">
+        <form action="/workout" method="get">
+          <button class="button" id="workout">WORKOUT</button>
+        </form>
+        <form action="/sleep" method="get">
+          <button class="button" id="sleep">SLEEP</button>
+        </form>
+        <form action="/travel" method="get">
+          <button class="button" id="travel">TRAVEL</button>
+        </form>
+        <form action="/party" method="get">
+          <button class="button" id="party">PARTY</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+.aboutUs {
+  background-image: url("images/about.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 800px;
+  height: 300px;
+  font-size: 30px;
+  margin: auto;
+  border: 5px solid purple;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.aboutCreators {
+  display: flex;
+  align-items: center;
+}
+
+.aboutCreators1 {
+  background-image: url("images/about.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 100px;
+  margin: auto;
+  border: 5px solid purple;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
