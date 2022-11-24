@@ -226,9 +226,9 @@ masterPlay.addEventListener("click", () => {
 
 function currentTime() {
   let date = new Date();
-  let hh = date.getHours();
-  let mm = date.getMinutes();
-  let ss = date.getSeconds();
+  let hh = ("0" + date.getHours()).slice(-2);
+  let mm = ("0" + date.getMinutes()).slice(-2);
+  let ss = ("0" + date.getSeconds()).slice(-2);
   let session = "Good Evening";
 
   if (hh >= 5 && hh < 12) {
